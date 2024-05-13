@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        var scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        var firstPoint = new Point();
+        Point firstPoint = new Point();
 
         double x1, x2, y1, y2;
 
@@ -34,9 +34,9 @@ public class Main {
         y2 = scanner.nextDouble();
         System.out.println();
 
-        var secondPoint = new Point(x2, y2);
+        Point secondPoint = new Point(x2, y2);
 
-        var segment = new Segment(firstPoint, secondPoint);
+        Segment segment = new Segment(firstPoint, secondPoint);
         System.out.println("Расстояние = " + segment.Calculate());
     }
 }
